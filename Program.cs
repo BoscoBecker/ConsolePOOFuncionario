@@ -15,6 +15,12 @@ funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCult
 Console.WriteLine("Funcionario :" + funcionario);
 Console.Write("Digite a porcetagem para aumentar o salário: ");
 
+Console.WriteLine("Informe o imposto: ");
+funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Console.WriteLine("Funcionario :" + funcionario);
+Console.WriteLine("Digite a porcetagem para aumentar o salário: ");
+
 funcionario.AumentarSalario(double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture));
 Console.WriteLine("Dados Atualizados " + funcionario);
 
